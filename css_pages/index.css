@@ -2,7 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   scroll-behavior: smooth;
 }
 .header {
@@ -36,6 +36,7 @@
   list-style: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 .herosec {
   height: 550px;
@@ -165,11 +166,12 @@
   width: 100%;
   border: 1px solid black;
   margin-top: 10px;
+  overflow: hidden;
 }
 .skillset > div {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
+  gap: 200px;
 }
 .skillset h2 {
   text-align: center;
@@ -185,7 +187,6 @@
   animation: moveLeft 3s linear infinite;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 @keyframes moveLeft {
   0% {
@@ -195,6 +196,12 @@
     transform: translateX(100%);
   }
 }
+
+
+.skillset:hover .icon {
+  animation-play-state: paused;
+}
+
 .icon img {
   height: 100%;
   width: 100%;
@@ -203,17 +210,24 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-top: 10px;
+  width: 150%;
+}
+.score p {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .score-outer {
   box-sizing: border-box;
   border-radius: 30px;
   width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.511);
+  border: 1.5px solid rgba(0, 0, 0, 0.511);
 }
 .score-inner {
   padding: 3px;
   border-radius: 30px;
-  width: 80%;
+  width: 70%;
   box-sizing: border-box;
   background-color: blue;
 }
@@ -312,7 +326,7 @@
   justify-content: space-around;
   border-radius: 5px;
   box-shadow: 0px 0px 5px;
-  transition: transform 0.3s ease,
+  transition: transform 0.3s ease;
 }
 .cards:nth-child(even) {
   flex-direction: row-reverse;
@@ -370,6 +384,7 @@
   width: 100%;
   text-align: center;
   margin-top: 100px;
+  border-top: 1px solid black;
 }
 .sec2 h2 {
   margin-top: 50px;
@@ -390,27 +405,27 @@
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 100px;
 }
 .achievbox {
   height: 350px;
   width: 300px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 120px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px;
   text-align: center;
   font-size: 16px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .achievimg {
   height: 65%;
   width: 90%;
-  margin: 20px auto;
+  margin: 10px auto;
   border-radius: 5px;
   box-shadow: 0px 0px 5px;
 }
-.achievimg img{
+.achievimg img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -438,8 +453,3 @@
   cursor: pointer;
   transform: scale(1.03);
 }
-
-
-
-
-
