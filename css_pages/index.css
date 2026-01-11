@@ -2,7 +2,7 @@
 * {
   margin: 0px;
   padding: 0px;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   scroll-behavior: smooth;
 }
 .header {
@@ -85,16 +85,15 @@
   left: -50px;
   transform: rotate(-10deg);
   clip-path: polygon(0px 0px, 120px 0px, 120px 100px, 100px 120px, 0px 120px);
-   font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
-.childimg p{
+.childimg p {
   text-align: center;
   font-size: 15px;
   margin-top: 10px;
 }
-.childimg span{
+.childimg span {
   font-weight: bold;
-
 }
 
 .heroimg:hover {
@@ -172,7 +171,7 @@
   justify-content: space-between;
   margin-top: 20px;
 }
-.skillset h2{
+.skillset h2 {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -188,9 +187,6 @@
   flex-direction: column;
   gap: 20px;
 }
-.icon:hover{
-   animation-play-state: paused;
-}
 @keyframes moveLeft {
   0% {
     transform: translateX(-100%);
@@ -203,18 +199,18 @@
   height: 100%;
   width: 100%;
 }
-.score{
+.score {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.score-outer{
+.score-outer {
   box-sizing: border-box;
   border-radius: 30px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.511);
 }
-.score-inner{
+.score-inner {
   padding: 3px;
   border-radius: 30px;
   width: 80%;
@@ -226,6 +222,7 @@
   width: 100%;
   border: 1.5px solid black;
   background-color: rgb(239, 239, 255);
+  margin-top: 50px;
 }
 .footerbox {
   display: flex;
@@ -292,10 +289,9 @@
   height: 100px;
   width: 100%;
   text-align: center;
-  margin-top: 20px;
 }
 .sec1 h2 {
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -309,22 +305,21 @@
 .cards {
   height: 400px;
   width: 1200px;
-  border: 1px solid black;
   margin: 50px auto;
-  box-shadow: -5px 5px chocolate;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-around;
   border-radius: 5px;
+  box-shadow: 0px 0px 5px;
+  transition: transform 0.3s ease,
 }
-.cards:nth-child(even){
+.cards:nth-child(even) {
   flex-direction: row-reverse;
 }
 .cardcnt {
   height: 350px;
   width: 700px;
-  
 }
 .cardcnt h2 {
   font-size: 30px;
@@ -350,7 +345,7 @@
 }
 .cardimg {
   height: 350px;
-  width: 400px; 
+  width: 400px;
 }
 .cardimg img {
   height: 100%;
@@ -359,9 +354,8 @@
   border-radius: 5px;
 }
 .cards:hover {
+  transform: scale(1.03);
   cursor: pointer;
-  box-shadow: 0px 0px 5px;
-   transform: scale(1.03);
 }
 
 .cardcnt button:hover {
@@ -371,7 +365,81 @@
   transition: 0.5s;
 }
 
-.achievments{
-  
+.sec2 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
+.sec2 h2 {
+  margin-top: 50px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sec2 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 21px;
+}
+.sec2 span {
+  font-weight: 500;
+}
+
+.achievments {
+  height: 900px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.achievbox {
+  height: 350px;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.achievimg {
+  height: 65%;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px;
+}
+.achievimg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.achievbox:nth-child(1) {
+  transform: rotate(-3deg);
+}
+.achievbox:nth-child(2) {
+  transform: rotate(3deg);
+}
+.achievbox:nth-child(3) {
+  transform: rotate(-3deg);
+}
+.achievbox:nth-child(4) {
+  transform: rotate(3deg);
+}
+.achievbox:nth-child(5) {
+  transform: rotate(-3deg);
+}
+.achievbox:nth-child(6) {
+  transform: rotate(3deg);
+}
+
+.achievbox:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+
+
+
 
