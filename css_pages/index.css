@@ -166,7 +166,7 @@
   width: 100%;
   border: 1px solid black;
   margin-top: 10px;
-  overflow: hidden;
+  overflow: ;
 }
 .skillset > div {
   display: flex;
