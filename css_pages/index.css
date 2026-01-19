@@ -166,12 +166,13 @@
   width: 100%;
   border: 1px solid black;
   margin-top: 10px;
-  overflow: ;
+  overflow: hidden;
 }
 .skillset > div {
   display: flex;
-  margin-top: 20px;
   gap: 200px;
+  width: 100%;
+  animation: scrollLeft 3s linear infinite;
 }
 .skillset h2 {
   text-align: center;
@@ -187,13 +188,14 @@
   animation: moveLeft 3s linear infinite;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 @keyframes moveLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 }
 
