@@ -199,11 +199,9 @@
   }
 }
 
-
 .skillset:hover .icon {
   animation-play-state: paused;
 }
-
 
 .icon img {
   height: 100%;
