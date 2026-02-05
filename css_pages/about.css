@@ -4,6 +4,7 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+
 .header {
   height: 80px;
   width: 100%;
@@ -15,27 +16,37 @@
   background-color: white;
   box-shadow: 0px 0px 4px;
 }
+
 .tamilletter {
   margin-left: 50px;
   background: linear-gradient(to right, #d2691e, #0000ff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.tamilletter a {
+  text-decoration: none;
+}
+
 .navlist {
   display: flex;
   gap: 30px;
   margin-left: 65%;
 }
+
 .navlist a {
   text-decoration: none;
   color: black;
 }
+
 .navlist li {
   list-style: none;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+
 .herosec {
   height: 550px;
   width: 100%;
@@ -45,10 +56,12 @@
   justify-content: space-evenly;
   /* border: 1px solid black; */
 }
+
 .herocont {
   height: 450px;
   width: 50%;
 }
+
 .heroimg {
   height: 400px;
   width: 25%;
@@ -56,16 +69,19 @@
   justify-content: space-between;
   pointer-events: none;
 }
+
 .imgbox {
   height: 100%;
   width: 49.5%;
   overflow: scroll;
 }
+
 .imglst1 {
   height: 200px;
   width: 100%;
   border: 2px solid white;
 }
+
 .imglst1 img {
   height: 100%;
   width: 100%;
@@ -73,94 +89,114 @@
   margin-top: 2px;
   animation: moveBottom 15s linear infinite;
 }
+
 @keyframes moveBottom {
   0% {
     transform: translateY(-300%);
   }
+
   100% {
     transform: translateY(0%);
   }
 }
+
 .imglst2 {
   height: 150px;
   width: 100%;
   border: 2px solid white;
   animation: moveTop 15s linear infinite;
 }
+
 @keyframes moveTop {
   0% {
     transform: translateY(0%);
   }
+
   100% {
     transform: translateY(-400%);
   }
 }
+
 .imglst2 img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
 .herocont h1 {
   margin-top: 40px;
   margin-left: 20px;
 }
+
 .herocont p {
   font-size: 22px;
   margin-left: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 10px;
 }
+
 .herocont h2 {
   margin-left: 20px;
   margin-top: 25px;
 }
+
 .footer {
   height: 350px;
   width: 100%;
   border: 0.5px solid black;
   background-color: rgb(239, 239, 255);
 }
+
 .footerbox {
   display: flex;
 }
+
 .signaturebox {
   height: 200px;
   width: 300px;
   margin-top: 90px;
   margin-left: 140px;
 }
+
 .signaturebox img {
   height: 100%;
   width: 100%;
   background-color: rgb(239, 239, 255);
 }
+
 .fcontent {
   margin-top: 70px;
   margin-left: 50px;
 }
+
 .fcontent h1 {
   font-size: 50px;
   font-weight: 700;
 }
+
 .fcontent p {
   font-size: 22px;
   margin-top: 10px;
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .contact {
   display: flex;
   gap: 60px;
   margin-top: -64px;
   margin-left: 50px;
 }
+
 .contact div h3 {
   font-size: 22px;
   font-weight: 350;
 }
+
 .contact div a {
   text-decoration: none;
 }
+
 .media {
   height: 40px;
   width: 300px;
@@ -168,12 +204,14 @@
   display: flex;
   justify-content: space-between;
 }
+
 .media div {
   height: 40px;
   width: 40px;
   box-shadow: -3px 4px chocolate;
   border-radius: 10px;
 }
+
 .media div img {
   height: 100%;
   width: 100%;
@@ -197,15 +235,19 @@
   border-radius: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .boximg:nth-child(2) {
   background-color: rgba(221, 101, 16, 0.087);
 }
+
 .boximg:nth-child(3) {
   background-color: rgba(164, 164, 224, 0.4);
 }
+
 .boximg:nth-child(4) {
   background-color: rgba(223, 13, 13, 0.138);
 }
+
 .boximg:nth-child(5) {
   background-color: rgba(70, 206, 70, 0.097);
 }
@@ -215,29 +257,35 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
+
 .jcont {
   height: 250px;
   width: 500px;
 }
+
 .images {
   height: 280px;
   width: 350px;
   margin-left: 70px;
   border-radius: 20px;
 }
+
 .images img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
+
 .text {
   text-align: center;
   margin-top: 20px;
 }
+
 .text h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .text p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
@@ -248,9 +296,10 @@
   margin-left: 20px;
   margin-top: 20px;
 }
+
 .jcont p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 20px;
   font-size: 20px;
   margin-top: 10px;
-} 
+}
