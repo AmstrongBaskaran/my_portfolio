@@ -46,7 +46,7 @@ body {
 .navlist {
   display: flex;
   gap: 30px;
-  margin-left: 65%;
+  margin-left: 72%;
 }
 
 .navlist a {
